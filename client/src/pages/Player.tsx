@@ -20,7 +20,7 @@ export const Player = () => {
         />
       </div>
       <div className="flex justify-between w-[90%] mx-auto">
-        <div className="p-5">{movie?.published_at.slice(0, 10)}</div>
+        <div className="p-5">{movie?.published_at?.slice(0, 10)}</div>
         <div className="p-5">{movie?.type}</div>
       </div>
     </>

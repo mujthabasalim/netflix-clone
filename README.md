@@ -1,20 +1,20 @@
 # Netflix Clone 🍿
 
-![Netflix Clone Preview](./public/preview.png) _(You should add a screenshot of your app here and replace the path)_
+![Netflix Clone Preview](./client/public/preview.png)
 
 A modern, full-stack web application replicating the core features and design of Netflix. Built with React, TypeScript, Vite, and powered by Firebase Authentication.
 
 ## 🚀 Live Demo
 
-[View Live Demo Here](https://your-live-project-link.com) _(Add your Vercel/Netlify link here)_
+[View Live Demo Here](https://mujthabasalim.vercel.app/)
 
 ## 🛠️ Built With
 
 - **Frontend Framework:** React (with TypeScript)
 - **Tooling:** Vite
-- **Styling:** CSS / TailwindCSS _(Update if using something else)_
+- **Styling:** TailwindCSS
 - **Authentication:** Firebase Auth (Email/Password)
-- **Database/Backend:** Firebase / TMDB API _(Update accordingly)_
+- **Database/Backend:** Firebase / TMDB API
 
 ## ✨ Key Features
 

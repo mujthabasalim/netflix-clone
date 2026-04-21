@@ -6,7 +6,7 @@ A modern, full-stack web application replicating the core features and design of
 
 ## 🚀 Live Demo
 
-[View Live Demo Here](https://mujthabasalim.vercel.app/)
+[View Live Demo Here](https://vercel.com/mujthabasalims-projects/mujthabasalim-netflix-clone)
 
 ## 🛠️ Built With
 

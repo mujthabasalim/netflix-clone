@@ -72,5 +72,5 @@ The `.gitignore` in this project has been configured to ignore `.env` files to k
 
 ## 👨‍💻 Author
 
-- Your Name - [@yourgithub](https://github.com/mujthabasalim)
-- Portfolio - [yourportfolio.com](https://mujthabasalim.vercel.app)
+- Mujthaba Salim - [@mujthabasalim](https://github.com/mujthabasalim)
+- Portfolio - [mujthabasalim](https://mujthabasalim.vercel.app)

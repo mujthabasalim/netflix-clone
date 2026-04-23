@@ -4,6 +4,29 @@ import { loginWithEmail, registerWithEmail } from "@/services/auth.service";
 import logo from "@/assets/logo.png";
 import bg_image from "@/assets/background_banner.jpg";
 
+const getErrorMessage = (err: unknown): string => {
+  const error = err as { code?: string; message?: string };
+  
+  switch (error.code) {
+    case "auth/invalid-credential":
+    case "auth/user-not-found":
+    case "auth/wrong-password":
+      return "Invalid email or password. Please try again.";
+    case "auth/email-already-in-use":
+      return "An account with this email already exists.";
+    case "auth/weak-password":
+      return "Password should be at least 6 characters.";
+    case "auth/invalid-email":
+      return "Please enter a valid email address.";
+    case "auth/network-request-failed":
+      return "Network error. Please check your internet connection.";
+    case "auth/too-many-requests":
+      return "Too many failed attempts. Please try again later.";
+    default:
+      return "Authentication failed. Please try again.";
+  }
+};
+
 export const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
@@ -37,9 +60,7 @@ export const Login = () => {
       }
       navigate("/");
     } catch (err: unknown) {
-      setError(
-        (err as Error).message || "Authentication failed. Please try again.",
-      );
+      setError(getErrorMessage(err));
     } finally {
       setLoading(false);
     }
